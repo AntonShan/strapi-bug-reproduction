@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sets",
+      "handler": "sets.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sets/count",
+      "handler": "sets.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sets/:id",
+      "handler": "sets.findOne",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sets",
+  "info": {
+    "name": "sets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "esoId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 128,
+      "minLength": 3,
+      "required": true
+    },
+    "itemSlots": {
+      "type": "component",
+      "repeatable": false,
+      "component": "set.drop-type"
+    },
+    "bonuses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "set.bonus",
+      "max": 5,
+      "min": 1,
+      "required": true
+    },
+    "dropType": {
+      "type": "enumeration",
+      "enum": [
+        "OVERLAND",
+        "DUNGEON",
+        "TRIAL",
+        "CRAFTED",
+        "MONSTER",
+        "PVP",
+        "ARENA"
+      ],
+      "required": true
+    },
+    "requiredDLC": {
+      "type": "enumeration",
+      "enum": [
+        "BASE_GAME",
+        "IMPERIAL_CITY",
+        "ORSINIUM",
+        "THIEVES_GUILD",
+        "DARK_BROTHERHOOD",
+        "SHADOWS_OF_THE_HIST",
+        "MORROWIND",
+        "HORNS_OF_THE_REACH",
+        "CLOCKWORK_CITY",
+        "DRAGON_BONES",
+        "SUMMERSET",
+        "WOLFHUNTER",
+        "MURKMIRE",
+        "WRATHSTONE",
+        "ELSWEYR",
+        "SCALEBREAKER",
+        "DRAGONHOLD",
+        "HARROWSTORM",
+        "STONETHORN",
+        "MARKARTH"
+      ],
+      "required": true,
+      "default": "BASE_GAME"
+    }
+  }
+}

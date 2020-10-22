@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_set_bonuses",
+  "info": {
+    "name": "bonus",
+    "icon": "pencil-alt"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 1
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

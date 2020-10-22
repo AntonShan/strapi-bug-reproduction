@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_set_drop_types",
+  "info": {
+    "name": "itemSlots",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hasJewelry": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasWeapons": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasLightArmor": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasMediumArmor": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasHeavyArmor": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
