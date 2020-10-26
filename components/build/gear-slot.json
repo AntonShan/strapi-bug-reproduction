@@ -1,0 +1,120 @@
+{
+  "collectionName": "components_build_gear_slots",
+  "info": {
+    "name": "gearSlot",
+    "icon": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "gearSlot": {
+      "type": "enumeration",
+      "enum": [
+        "HEAD",
+        "SHOULDER",
+        "CHEST",
+        "ARM",
+        "LEG",
+        "FEET",
+        "WAIST",
+        "RING1",
+        "RING2",
+        "NECKLACE",
+        "WEAPON1",
+        "WEAPON2"
+      ],
+      "default": "HEAD",
+      "required": true
+    },
+    "set": {
+      "model": "sets"
+    },
+    "weight": {
+      "type": "enumeration",
+      "enum": [
+        "NONE",
+        "LIGHT",
+        "MEDIUM",
+        "HEAVY"
+      ],
+      "required": true,
+      "default": "NONE"
+    },
+    "trait": {
+      "type": "enumeration",
+      "enum": [
+        "NONE",
+        "POWERED",
+        "CHARGED",
+        "PRECISE",
+        "INFUSED",
+        "DEFENDING",
+        "TRAINING",
+        "SHARPENED",
+        "DECISIVE",
+        "NIRNHONED",
+        "STURDY",
+        "IMPENETRABLE",
+        "REINFORCED",
+        "WELL_FITTED",
+        "INVIGORATING",
+        "DIVINES",
+        "HEALTHY",
+        "ARCANE",
+        "ROBUST",
+        "BLOODTHIRSTY",
+        "HARMONY",
+        "TRIUNE",
+        "PROTECTIVE",
+        "SWIFT"
+      ],
+      "required": true,
+      "default": "NONE"
+    },
+    "enchantment": {
+      "type": "enumeration",
+      "enum": [
+        "NONE",
+        "FROST",
+        "ABSORB_STAMINA",
+        "HARDENING",
+        "CRUSHING",
+        "PRISMATIC_ONSLAUGHT",
+        "FOULNESS",
+        "POISON",
+        "ABSORB_MAGICKA",
+        "SHOCK",
+        "ABSORB_HEALTH",
+        "DECREASE_HEALTH",
+        "WEAPON_DAMAGE",
+        "WEAKENING",
+        "FLAME",
+        "STAMINA",
+        "PRISMATIC_DEFENSE",
+        "MAGICKA",
+        "HEALTH",
+        "FROST_RESIST",
+        "STAMINA_RECOVERY",
+        "REDUCE_FEAT_COST",
+        "DISEASE_RESIST",
+        "BASHING",
+        "BRACING",
+        "POISON_RESIST",
+        "INCREASE_MAGICAL_HARM",
+        "DECREASE_SPELL_HARM",
+        "MAGICKA_RECOVERY",
+        "REDUCE_SPELL_COST",
+        "SHOCK_RESIST",
+        "HEALTH_RECOVERY",
+        "POTION_BOOST",
+        "POTION_SPEED",
+        "FLAME_RESIST",
+        "INCREASE_PHYSICAL_HARM",
+        "DECREASE_PHYSICAL_HARM",
+        "REDUCE_SKILL_COST"
+      ],
+      "required": true,
+      "default": "NONE"
+    }
+  }
+}

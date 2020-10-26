@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "builds",
+  "info": {
+    "name": "build",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 64,
+      "required": true
+    },
+    "gearSlots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "build.gear-slot",
+      "required": true,
+      "max": 1,
+      "min": 1
+    }
+  }
+}
